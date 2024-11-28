@@ -1,0 +1,20 @@
+[package]
+name = "bevy_observed_timers"
+version = "0.1.0"
+edition = "2021"
+categories = ["game-development"]
+keywords = ["bevy", "addon", "timer", "observer", "entity"]
+description = "A bevy addon for setting up and observing timers on entities."
+repository = "https://github.com/ItsDoot/bevy_observed_timers"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+rust-version = "1.82.0"
+
+[features]
+default = ["bevy_app"]
+
+[dependencies]
+bevy_app = { version = "=0.15.0-rc.3", default-features = false, optional = true }
+bevy_ecs = { version = "=0.15.0-rc.3", default-features = false }
+bevy_time = { version = "=0.15.0-rc.3", default-features = false }
+indexmap = "2.6.0"
